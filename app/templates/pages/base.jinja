@@ -4,10 +4,12 @@
 
     <head>
         <meta charset="utf-8">
-        <title>{%block titel %}{% endblock%}</title>
+        <title>{%block title %}{% endblock%}</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
     </head>
     <body>
-        <head>
+        <header>
             <nav>
                 <ul>
                     <li>Flask Demo</li>
@@ -17,9 +19,14 @@
                     <li><a href="/about">About</a></li>
                 </ul>
             </nav>
-        </head>
-    {%block titel %}
-    {% endblock%}
+        </header>
+
+        <main>
+        
+            {%block content %}
+            {% endblock%}
+        
+        </main>
     
     </body>
 
